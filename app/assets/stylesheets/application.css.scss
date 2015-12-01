@@ -21,7 +21,7 @@
 }
 
 body {
-  background: image-url("mainbg.jpeg") no-repeat;
+  background: image-url("mainbg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -57,3 +57,11 @@ ul {
       max-width: 160px;
     }
  }
+
+ .row-eq-height-xs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-direction: column;
+}
