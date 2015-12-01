@@ -7,13 +7,15 @@
 <h2>Places I'd like to visit</h2>
 <div class="row">
   <% @countries.each do |country| %>
-    <div class="col-xs-6 col-md-4" >
+    <div class="col-xs-6 col-md-4 clearfix" >
       <ul>
-      <li style="list-style: none;clear: left;">
-        <%= country %>
-        <%= image_tag "#{country}", height: 150,
-                                    width: 200,
-                                    class: "img-responsive"%></li>
+        <li style="list-style: none;">
+          <%= country %>
+          <span class="picfix equal">
+          <%= image_tag "#{country}", height: 150,
+                                      width: 200,
+                                      class: "img-responsive"%></li>
+          </span>
       </ul>
     </div>
       <% end %>

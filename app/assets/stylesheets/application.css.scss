@@ -38,6 +38,19 @@ ul {
   list-style: none;
 }
 
+.picfix {
+  display: table-cell;
+  max-height: 90px;
+  max-width: 160px;
+
+}
+
+.equal, .equal > span[class*='col-'] {
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
 @media screen and (min-width: 480px) {
     li:nth-last-child{
     clear: both;
