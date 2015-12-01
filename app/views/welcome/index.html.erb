@@ -1,8 +1,20 @@
 <h1>Welcome to my Travel Site</h1>
-<p>This is my very awesome travel site.</p>
-<p>I am from <%= @homeland %></p>
+  <p>This is my very awesome travel site.</p>
+  <p>I am from <%= @homeland %></p>
 
+<br>
 
-<% @countries.each do |country| %>
-  <%= country %>
-<% end %>
+<h2>Places I'd like to visit</h2>
+<div class="row">
+  <% @countries.each do |country| %>
+    <div class="col-xs-6 col-md-4" >
+      <ul>
+      <li style="list-style: none;clear: left;">
+        <%= country %>
+        <%= image_tag "#{country}", height: 150,
+                                    width: 200,
+                                    class: "img-responsive"%></li>
+      </ul>
+    </div>
+      <% end %>
+</div>

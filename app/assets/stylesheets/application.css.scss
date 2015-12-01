@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  padding-bottom: 10px;
+}
+
+body {
+  background: image-url("mainbg.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Marck Script', cursive;
+  color: #000;
+  font-weight: bolder;
+  font-size: 1.75em;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 480px) {
+    li:nth-last-child{
+    clear: both;
+    }
+ }
