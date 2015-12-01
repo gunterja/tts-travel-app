@@ -40,19 +40,20 @@ ul {
 
 .picfix {
   display: table-cell;
-  max-height: 90px;
-  max-width: 160px;
+  max-height: 150px;
+  max-width: 265px;
 
 }
 
-.equal, .equal > span[class*='col-'] {
+.equal, .equal > div[class*='col-'] {
     display: -webkit-flex;
     display: flex;
     flex:1 1 auto;
 }
 
-@media screen and (min-width: 480px) {
-    li:nth-last-child{
-    clear: both;
+@media screen and (max-width: 480px) {
+      .picfix {
+      max-height: 90px;
+      max-width: 160px;
     }
  }
